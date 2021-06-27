@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.e_votingsystem">
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EVotingSystem">
+        <activity android:name=".FingerPrintAuthAdmin"></activity>
+        <activity android:name=".FingerPrintAuth" />
+        <activity android:name=".ResetPassword" />
+        <activity android:name=".EditCandidate" />
+        <activity android:name=".ActiveCandidate" />
+        <activity android:name=".CandidateOption" />
+        <activity android:name=".CandidatePage" />
+        <activity android:name=".CreateCandidatePage2" />
+        <activity android:name=".CreateCandidatePage" />
+        <activity android:name=".CreateElectionPage" />
+        <activity android:name=".SettingsAdmin" />
+        <activity android:name=".SettingsUser" />
+        <activity android:name=".VoterPage" />
+        <activity android:name=".HomePageAdmin" />
+        <activity android:name=".HomePageUser" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".RegisterUser" />
+        <activity android:name=".LoginPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

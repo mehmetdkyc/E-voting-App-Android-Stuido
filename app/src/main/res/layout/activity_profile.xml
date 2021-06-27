@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/greetingProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/Emailaddresstitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="Email Adress"
+        app:layout_constraintTop_toBottomOf="@id/greetingProfile"
+        app:layout_constraintLeft_toLeftOf="@id/greetingProfile" />
+    <TextView
+        android:id="@+id/Emailaddressprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/Emailaddresstitle"
+        app:layout_constraintLeft_toLeftOf="@id/Emailaddresstitle" />
+    <TextView
+        android:id="@+id/fullnametitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="Full Name"
+        app:layout_constraintTop_toBottomOf="@id/Emailaddressprofile"
+        app:layout_constraintLeft_toLeftOf="@id/greetingProfile" />
+    <TextView
+        android:id="@+id/fullNameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/fullnametitle"
+        app:layout_constraintLeft_toLeftOf="@id/Emailaddresstitle" />
+    <TextView
+        android:id="@+id/agetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="Age"
+        app:layout_constraintTop_toBottomOf="@id/fullNameProfile"
+        app:layout_constraintLeft_toLeftOf="@id/fullnametitle" />
+    <TextView
+        android:id="@+id/ageProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/agetitle"
+        app:layout_constraintLeft_toLeftOf="@id/fullnametitle" />
+
+    <Button
+        android:id="@+id/backHomePage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Page"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#15D6AF"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/editAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Edit"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#15D6AF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintLeft_toLeftOf="@id/backHomePage"
+
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+</androidx.constraintlayout.widget.ConstraintLayout>
